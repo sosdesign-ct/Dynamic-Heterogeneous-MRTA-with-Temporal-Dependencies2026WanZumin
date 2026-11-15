@@ -1,0 +1,22 @@
+# Core numerical / RL dependencies
+# Install PyTorch separately to match your CUDA build, e.g.:
+#   pip install --index-url https://download.pytorch.org/whl/cu118 --extra-index-url https://pypi.org/simple torch==2.1.2
+# (a CPU-only build also works; the code auto-falls back to CPU if CUDA is unavailable/incompatible)
+torch>=2.0
+
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.6
+
+# CP-SAT oracle audit (Google OR-Tools)
+ortools>=9.5
+
+# Training-curve / TensorBoard log parsing (optional, only for figure regeneration from logs)
+tensorboard>=2.10
+
+# Confidence-interval statistics for the main results table (scripts/make_main_table.py)
+rliable>=1.0
+
+# Optional: scenario animation export (only needed by scripts/animate_mrta_scenario.py)
+# imageio>=2.25
+# imageio-ffmpeg>=0.4
